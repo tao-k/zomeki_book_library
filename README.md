@@ -5,20 +5,25 @@ Short description and motivation.
 How to use my plugin.
 
 ## Installation
-Add this line to your application's Gemfile:
+Add this line to your zomeki application's Gemfile:
 
 ```ruby
-gem 'zomeki_book_library'
+gem 'member_list', path: '/var/www/member_list'
 ```
 
 And then execute:
 ```bash
-$ bundle
+$ bundle install
 ```
 
-Or install it yourself as:
+Add this line to your zomeki application's routes.rb:
+```ruby
+mount ZomekiBookLibrary::Engine => '/'
+```
+
+Restart your zomeki application
 ```bash
-$ gem install zomeki_book_library
+$ bundle exec rake unicorn:restart RAILS_ENV=production
 ```
 
 ## Contributing
