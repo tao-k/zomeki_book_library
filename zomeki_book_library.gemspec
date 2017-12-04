@@ -9,14 +9,15 @@ Gem::Specification.new do |s|
   s.version     = ZomekiBookLibrary::VERSION
   s.authors     = [""]
   s.email       = [""]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of ZomekiBookLibrary."
-  s.description = "TODO: Description of ZomekiBookLibrary."
+  s.homepage    = "https://github.com/tao-k/zomeki_book_library"
+  s.summary     = "Sample of Contents Plugin"
+  s.description = "Sample For ZOMEKI Developer"
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
 
-  s.add_dependency "rails", "~> 5.0.6"
+  s.add_dependency "rails", "~> 5.0.0", ">= 5.0.0.1"
+  s.add_dependency 'will_paginate', '~> 3.1.3'
 
-  s.add_development_dependency "sqlite3"
+  s.add_development_dependency "pg"
 end
