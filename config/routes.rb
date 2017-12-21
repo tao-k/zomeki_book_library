@@ -1,7 +1,8 @@
-ZomekiBookLibrary::Engine.routes.draw do
+Rails.application.routes.draw do
+#ZomekiCMS::Application.routes.draw do
   ## admin
   mod = "zomeki_book_library"
-  scope "#{ZomekiCMS::ADMIN_URL_PREFIX}/#{mod}/c:concept" do
+  scope "#{ZomekiCMS::ADMIN_URL_PREFIX}/#{mod}/c:concept", :module => mod, :as => mod do
     resources :content_base,
       :controller => 'admin/content/base'
 
@@ -26,7 +27,8 @@ ZomekiBookLibrary::Engine.routes.draw do
 
 
   ## public
-  scope "_public/#{mod}" do
+  scope "_public/#{mod}", :module => mod, :as => '' do
     get 'node_books(/index.:format)' => 'public/node/books#index'
   end
+
 end

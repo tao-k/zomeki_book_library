@@ -1,6 +1,2 @@
-# Controller For Managing Content Directory Settings
-
-module ZomekiBookLibrary
-  class Admin::Node::BooksController < Cms::Admin::Node::BaseController
-  end
+class ZomekiBookLibrary::Admin::Node::BooksController < Cms::Admin::Node::BaseController
 end

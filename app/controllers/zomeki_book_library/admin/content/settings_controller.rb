@@ -1,9 +1,6 @@
 # Controller For Managing Content Settings
-
-module ZomekiBookLibrary
-  class Admin::Content::SettingsController < Cms::Admin::Content::SettingsController
-    def model
-      ZomekiBookLibrary::Content::Setting
-    end
+class ZomekiBookLibrary::Admin::Content::SettingsController < Cms::Admin::Content::SettingsController
+  def model
+    ZomekiBookLibrary::Content::Setting
   end
 end

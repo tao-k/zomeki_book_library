@@ -1,4 +1,2 @@
-module ZomekiBookLibrary
-  class Piece::Book < Cms::Piece
-  end
+class ZomekiBookLibrary::Piece::Book < Cms::Piece
 end
