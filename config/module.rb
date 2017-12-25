@@ -1,4 +1,4 @@
-Cms::Lib::Modules::ModuleSet.draw_plugin :zomeki_book_library, '図書情報：プラグイン', 999 do |mod|
+Cms::Lib::Modules::ModuleSet.draw :zomeki_book_library, '図書情報：プラグイン', 999 do |mod|
 #  ## contents
   mod.content :books, '図書：プラグイン'
 
